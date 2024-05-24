@@ -3,6 +3,7 @@
 function theme_enqueue_styles(){
     // Chargement du style.css du theme
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/style.css'));
+
 }
 
 // Action qui permet de charger des scripts dans notre theme
@@ -12,7 +13,6 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function AjoutLibrairie() {
     /* librairie JQuery  */
     wp_enqueue_script('JQuery-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array('jquery'), '3.7.1', true);
-  
 }
 add_action( 'wp_enqueue_scripts', 'AjoutLibrairie' );
 
@@ -38,3 +38,4 @@ function enregistrement_nav_menus() {
 	);
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menus' );
+
