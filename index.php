@@ -17,6 +17,21 @@ get_header();
 
 	<main>
 
+		<section id="header">
+					<?php get_template_part('template-parts/hero'); ?>
+		</section>
+
+		<section id="filter_photos">
+					<?php get_template_part('template-parts/photo-filtre'); ?>
+		</section>
+
+		<section id="containerPhoto" class="block_du_catalogue">
+					<?php get_template_part('template-parts/photo-container'); ?>
+		</section>
+
+    <script>
+        var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+    </script>
     
 	</main>
 

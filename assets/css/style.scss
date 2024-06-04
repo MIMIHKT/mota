@@ -17,6 +17,9 @@
 
 }
 
+// import des mixins
+@import "mixins/keyframes";
+
 // import des partiels
 @import "partiels/header";
 @import "partiels/footer";
@@ -24,7 +27,8 @@
 @import "partiels/modale";
 @import "partiels/formulaire";
 @import "partiels/block";
+@import "partiels/filtre";
 @import "partiels/single";
 @import "partiels/lightbox";
-
+@import "partiels/selecteur";
 
